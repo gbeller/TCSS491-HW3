@@ -322,8 +322,6 @@ window.onload = function () {
 	});
 
 	document.getElementById("saveButton").onclick = function() { 
-		console.log("save clicked");
-
 		var save = {studentName: "Gabrielle Bly", stateName: "data", gameData: []};
 
 		for (var i = 0; i < gameEngine.entities.length; i++) {
@@ -340,8 +338,6 @@ window.onload = function () {
 	};
 
 	document.getElementById("loadButton").onclick = function() {
-		console.log("load clicked");
-
 		socket.emit("load", {studentName: "Gabrielle Bly", stateName: "data"});
 	};
 
